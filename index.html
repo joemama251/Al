@@ -1,0 +1,92 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-md w-full space-y-8">
+    <div>
+      <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+        Intake Form
+      </h2>
+      <p class="mt-2 text-center text-sm text-gray-600">
+        Please fill in your details
+      </p>
+    </div>
+    <form class="mt-8 space-y-6">
+      <div class="rounded-md shadow-sm -space-y-px">
+        <div>
+          <label for="name" class="sr-only">Name</label>
+          <input id="name" name="name" type="text" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Name">
+        </div>
+        <div>
+          <label for="age" class="sr-only">Age</label>
+          <input id="age" name="age" type="number" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Age">
+        </div>
+        <div>
+          <label for="sex" class="sr-only">Sex</label>
+          <select id="sex" name="sex" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm">
+            <option value="" disabled selected>Select your sex</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="addiction" class="sr-only">Addictive Behavior</label>
+          <select id="addiction" name="addiction" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm">
+            <option value="" disabled selected>Select an addictive behavior</option>
+            <option value="alcohol">Alcohol</option>
+            <option value="substances">Substances</option>
+            <option value="tobacco">Tobacco</option>
+            <option value="marijuana">Marijuana</option>
+            <option value="pornography">Pornography</option>
+            <option value="sex">Sex</option>
+            <option value="social_media">Social Media/Phone</option>
+            <option value="food_sugar">Food/Sugar</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="max-w-md w-full space-y-8 mt-10">
+  <div>
+    <h2 class="text-center text-2xl font-extrabold text-gray-900">
+      AI Chat Interface
+    </h2>
+  </div>
+  <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div class="chat-window h-64 overflow-y-scroll p-4 border border-gray-300 rounded">
+      <!-- Chat messages will appear here -->
+      <div class="message mb-4">
+        <div class="text-sm text-gray-600">AI:</div>
+        <div class="text-base">Hello! How can I assist you today?</div>
+      </div>
+      <div class="message mb-4">
+        <div class="text-sm text-gray-600">User:</div>
+        <div class="text-base">I'm feeling a bit tempted today.</div>
+      </div>
+    </div>
+    <div class="mt-4">
+      <input type="text" placeholder="Type a message..." class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+    </div>
+  </div>
+</div>
+<div class="max-w-md w-full space-y-8 mt-10">
+  <div>
+    <h2 class="text-center text-2xl font-extrabold text-gray-900">
+      Behavior Monitoring Dashboard
+    </h2>
+  </div>
+  <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div class="dashboard-content">
+      <p class="text-gray-700">You spent 1 hour on social media today.</p>
+      <p class="text-gray-700">Would you like to take a break and do something else?</p>
+      <button class="mt-4 w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        Take a Break
+      </button>
+    </div>
+  </div>
+</div>
